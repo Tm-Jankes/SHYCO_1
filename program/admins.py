@@ -35,7 +35,7 @@ async def update_admin(client, message):
     )
 
 
-@Client.on_message(command(["skip", f"skip@{BOT_USERNAME}", "vskip", "سكيب"]) & other_filters)
+@Client.on_message(command(["skip", f"skip@{BOT_USERNAME}", "vskip", "تخطي"]) & other_filters)
 @authorized_users_only
 async def skip(c: Client, m: Message):
     await m.delete()
