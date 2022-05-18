@@ -57,7 +57,7 @@ async def ytdl(link):
         return 0, stderr.decode()
 
 
-@Client.on_message(command(["vplay", f"vplay@{BOT_USERNAME}", "لايف" ,"فيد"]) & other_filters)
+@Client.on_message(command(["vplay", f"vplay@{BOT_USERNAME}", "فديو" ,"فيد"]) & other_filters)
 async def vplay(c: Client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -175,7 +175,7 @@ async def vplay(c: Client, m: Message):
                     amaze = MediumQualityVideo()
                 elif Q == 360:
                     amaze = LowQualityVideo()
-                await loser.edit("🔄 **انتظر قليلا **")
+                await loser.edit("**ويت يروحي 🌝**")
                 await call_py.join_group_call(
                     chat_id,
                     AudioVideoPiped(
@@ -235,7 +235,7 @@ async def vplay(c: Client, m: Message):
                             )
                         else:
                             try:
-                                await loser.edit("🔄 **انتظر قليلا**")
+                                await loser.edit("**ويت يروحي 🌝**")
                                 await call_py.join_group_call(
                                     chat_id,
                                     AudioVideoPiped(
@@ -264,7 +264,7 @@ async def vplay(c: Client, m: Message):
                 "» reply to an **video file** or **give something to search.**"
             )
         else:
-            loser = await c.send_message(chat_id, "🔍 **جاري البحث ياحب 🖤🥀...**")
+            loser = await c.send_message(chat_id, " **جاري البحث ياحب 🖤🥀...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
@@ -299,7 +299,7 @@ async def vplay(c: Client, m: Message):
                         )
                     else:
                         try:
-                            await loser.edit("🔄 **انتظر قليلا...**")
+                            await loser.edit(" **جاري البحث ياحب 🖤🥀...**")
                             await call_py.join_group_call(
                                 chat_id,
                                 AudioVideoPiped(
