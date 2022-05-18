@@ -46,7 +46,7 @@ async def ytdl(link: str):
     return 0, stderr
 
 
-@Client.on_message(command(["play", f"play@{BOT_USERNAME}", "مستر", "عسليه", "فوديكا", "شيكو", "شغل", "تشغيل"]) & other_filters)
+@Client.on_message(command(["play", f"play@{BOT_USERNAME}", "مستر", "محمد", "فوديكا", "شيكو", "شغل", "تشغيل"]) & other_filters)
 async def play(c: Client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -149,7 +149,7 @@ async def play(c: Client, m: Message):
                     userid = m.from_user.id
                     thumbnail = f"{IMG_5}"
                     image = await thumb(thumbnail, title, userid, ctitle)
-                    await suhu.edit("🔄 **انتظر قليلا...**")
+                    await suhu.edit("**ويت يروحي 🌝**")
                     await call_py.join_group_call(
                         chat_id,
                         AudioPiped(
@@ -211,7 +211,7 @@ async def play(c: Client, m: Message):
                             )
                         else:
                             try:
-                                await suhu.edit("🔄 **انتظر قليلا...**")
+                                await suhu.edit("**ويت يروحي 🌝**")
                                 await call_py.join_group_call(
                                     chat_id,
                                     AudioPiped(
@@ -272,7 +272,7 @@ async def play(c: Client, m: Message):
                         )
                     else:
                         try:
-                            await suhu.edit("🔄 **انتظر قليلا...**")
+                            await suhu.edit("**ويت يروحي 🌝**")
                             await call_py.join_group_call(
                                 chat_id,
                                 AudioPiped(
