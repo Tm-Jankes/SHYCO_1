@@ -57,12 +57,7 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""✨ **اهلا بك {message.from_user.mention()} !**\n
-💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **يتيح لك تشغيل الموسيقى والفيديو في مجموعات من خلال المكالمات الجديدة في Telegram! **
-
-💡 **اكتشف جميع أوامر البوت وكيفية عملها من خلال النقر على زر » 📚 زر الاوامر**
-
-🔖 **لمعرفة كيفية استخدام هذا البوت ، يرجى النقر فوق » ❓ زر دليل الاستخدام**
+        f"""╖ ❬ 🧍 ❭ اهلا بيك عزيزي ⇊n\╢ ❬ 🤖 ❭ انا بوت سورس جانكيز ⇊n\╢ ❬ 🧸 ❭ يتيح لك تشغيل ⇊n\╜ ❬ 💃 ❭ الموسيقي & الفيديو في المحادثات الصوتيه ⇊
 """,
                reply_markup=InlineKeyboardMarkup(
             [
@@ -79,15 +74,15 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ المبرمج فودیگا ›", url=f"https://t.me/vod_ik_ax"
+                        "‹ المبرمج فودیگا ›", url=f"https://t.me/U_Androld"
                     ),
                     InlineKeyboardButton(
-                        "‹ المبرمج اسرائیل ›", url=f"https://t.me/K_I_U1"
+                        "‹ المبرمج شيكو ›", url=f"https://t.me/SHYCO1"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ قـنـاه الـسـورس ›", url="https://t.me/SH_YCO"
+                        "‹ قـنـاه الـسـورس ›", url="https://t.me/janke3s"
                     )
                 ],
             ]
@@ -109,7 +104,7 @@ async def alive(c: Client, message: Message):
             [
                 InlineKeyboardButton("‹ جـروب الـدعـم ›", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "‹ قـنـاه الـسـورس ›", url=f"https://t.me/SH_YCO"
+                    "‹ قـنـاه الـسـورس ›", url=f"https://t.me/janke3s"
                 ),
             ]
         ]
