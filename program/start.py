@@ -102,7 +102,7 @@ async def alive(c: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("‹ جـروب الـدعـم ›", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("‹ جـروب الـدعـم ›", url=f"https://t.me/sh_yc"),
                 InlineKeyboardButton(
                     "‹ قـنـاه الـسـورس ›", url=f"https://t.me/janke3s"
                 ),
@@ -125,7 +125,7 @@ async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
     delta_ping = time() - start
-    await m_reply.edit_text("🏓 `‹ البنج تمام یا اسرائیل ›`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
+    await m_reply.edit_text("🏓 `‹ البنج تمام یا شيكو ›`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
 
 
 @Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
@@ -169,8 +169,8 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("‹ قـنـاه الـسـورس ›", url=f"https://t.me/SH_YCO"),
-                            InlineKeyboardButton("‹ جـروب الـدعـم ›", url=f"https://t.me/JANK3S")
+                            InlineKeyboardButton("‹ قـنـاه الـسـورس ›", url=f"https://t.me/janke3s"),
+                            InlineKeyboardButton("‹ جـروب الـدعـم ›", url=f"https://t.me/sh_yc")
                         ],
                         [
                             InlineKeyboardButton("‹ حـسـاب الـمـسـاعـد ›", url=f"https://t.me/{ass_uname}")
