@@ -18,7 +18,7 @@ from config import (
 async def cbstart(_, query: CallbackQuery):
     await query.answer("home start")
     await query.edit_message_text(
-                f"""╖ ❬ 🧍 ❭ اهلا بيك عزيزي ⇊n/╢ ❬ 🤖 ❭ انا بوت سورس جانكيز ⇊n/╢ ❬ 🧸 ❭ يتيح لك تشغيل ⇊n/╜ ❬ 💃 ❭ الموسيقي & الفيديو في المحادثات الصوتيه ⇊
+                f"""╖ ❬ 🧍 ❭ اهلا بيك عزيزي ⇊n\╢ ❬ 🤖 ❭ انا بوت سورس جانكيز ⇊n\╢ ❬ 🧸 ❭ يتيح لك تشغيل ⇊n\╜ ❬ 💃 ❭ الموسيقي & الفيديو في المحادثات الصوتيه ⇊
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -35,15 +35,15 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ المبرمج فودیگا ›", url=f"https://t.me/vod_ik_ax"
+                        "‹ المبرمج فودیگا ›", url=f"https://t.me/U_Androld"
                     ),
                     InlineKeyboardButton(
-                        "‹ المبرمج اسرائیل ›", url=f"https://t.me/K_I_U1"
+                        "‹ المبرمج شيكو ›", url=f"https://t.me/SHYCO1"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "‹ قـنـاه الـسـورس ›", url="https://t.me/SH_YCO"
+                        "‹ قـنـاه الـسـورس ›", url="https://t.me/janke3s"
                     )
                 ],
             ]
